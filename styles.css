@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1rem;
+  }
+
+  .book-card {
+    padding: 1rem;
+  }
+}/* تصميم مشابه للأربعين النووية */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #34495e;
+  --accent-color: #e67e22;
+  --text-color: #333;
+  --bg-color: #f8f9fa;
+}
+
+body {
+  font-family: 'Amiri', serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.8;
+}
+
+.header {
+  background: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.main-content {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.book-card {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.book-title {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.book-text {
+  white-space: pre-line;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.footer {
+  background: var(--secondary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  margin-top: 2rem;
+}
+/* تنسيق الفهرس */
+.toc-section {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+
+.toc-container {
+  columns: 2;
+  column-gap: 2rem;
+}
+
+.toc-item {
+  margin-bottom: 0.8rem;
+  break-inside: avoid;
+}
+
+.toc-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 0.3s;
+  display: block;
+  padding: 0.3rem 0;
+}
+
+.toc-link:hover {
+  color: var(--accent-color);
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .toc-container {
+    columns: 1;
+  }
+}
